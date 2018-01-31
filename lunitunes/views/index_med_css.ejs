@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1 style="color:blue">Detta är en blå < h1 > tag </h1>
+    <h2 style="font-family: Impact">Detta är en < h2 > tag med fonten Impact</h2>
+    <h3 style="text-align:center">Detta är en centrerad < h3 > tag </h3>
+    <h4 style=" border: 3px solid powderblue">Detta är en < h4 > tag med en border runt sig som är 3 pixlar bred </h4>
+    <p>Detta är en < p > tag</p>
+    <p>För att bryta av raden kan <br> < br > användas</p>
+    <br>
+    <br>
+    <div style="padding-bot:50px;">
+      <div style="background: #cce5ff; width:50%; float: left;">
+        <p>Här har vi lagt en width på 50% samt flyttat denna div till vänster</p>
+      	<p>För att gruppera text kan man använda < div > </p>
+      	<p>Då kan man enkelt styla stora delar text enkelt vilket vi senare kommer se när vi applicerar css </p>
+      	<p>Lägg märke till att i denna < div > så finns det 3 stycken < p > tags </p>
+      </div>
+      <div style="background: #ffe5e5; width:50%; float: right;">
+        <p>Här har vi lagt en width på 50% samt flyttat denna div till höger</p>
+        <p>Då kan man enkelt styla stora delar text enkelt vilket vi senare kommer se när vi applicerar css </p>
+        <p>Lägg märke till att i denna < div > så finns det 3 stycken < p > tags </p>
+        <p>Lägg märke till att i denna < div > så finns det 3 stycken < p > tags </p>
+      </div>
+    </div>
+
+    <div style:"margin-top:100px">
+		<p>Genom att använda < ul > med < li > så får man en unordered list (ul) med list items (li) i</p>	
+        <ul style="background: #ff9999; padding: 20px">
+          <li style="background: #ffe5e5; padding-left: 100px">Sak 1 </li> 
+          <li style="background: #ffe5e5; padding-top: 100px">Sak 2 </li> 
+          <li style="background: #ffe5e5; padding-bottom:100px">Sak 3 </li> 
+        </ul>
+   	</div>
+   	<br>
+   	<br>
+   	<div>
+   		<p>Genom att använda < form > taggen kan man enkelt få formulär </p>
+   		<form action="/logga_in_metod" method="post" style="background-color: #3CBC8D; padding:5px; color: white;">
+		  <p>Användarnamn:</p>
+		  <input type="text" name="username">
+		  <br>
+		  <p>Lösenord:</p>
+		  <input type="text" name="password">
+		  <br>
+		  <input type="submit" value="Logga in" style="padding:5px; border:2px solid #ccc; border-radius: 5px; margin-top:5px">
+		  <br>
+		</form>
+   	</div>
+  </body>
+</html>

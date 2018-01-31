@@ -1,10 +1,15 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body{
+  margin-left: 20px;
 }
 
-a {
-  color: #00B7FF;
+div {
+  width: 200px;
+}
+ 
+h1 {
+  font: 400 50px/1.5 Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 h2 {
   font: 400 40px/1.5 Helvetica, Verdana, sans-serif;

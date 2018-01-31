@@ -5,7 +5,43 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>Detta är en < h1 > tag </h1>
+    <h2>Detta är en < h2 > tag </h2>
+    <h3>Detta är en < h3 > tag </h3>
+    <h4>Detta är en < h4 > tag </h4>
+    <p>Detta är en < p > tag</p>
+    <p>För att bryta av raden kan <br> < br > användas</p>
+    <br>
+    <br>
+    <div>
+    	<p>För att gruppera text kan man använda < div > </p>
+    	<p>Då kan man enkelt styla stora delar text enkelt vilket vi senare kommer se när vi applicerar css </p>
+    	<p>Lägg märke till att i denna < div > så finns det 3 stycken < p > tags </p>
+    </div>
+    <br>
+    <br>
+    <div>
+		<p>Genom att använda < ul > med < li > så får man en unordered list (ul) med list items (li)</p>	
+        <ul>
+          <li>Sak 1 </li> 
+          <li>Sak 2 </li> 
+          <li>Sak 3 </li> 
+        </ul>
+   	</div>
+   	<br>
+   	<br>
+   	<div>
+   		<p>Genom att använda < form > taggen kan man enkelt få formulär </p>
+   		<form action="/logga_in_metod" method="post">
+		  <p>Användarnamn:</p>
+		  <input type="text" name="username">
+		  <br>
+		  <p>Lösenord:</p>
+		  <input type="text" name="password">
+		  <br>
+		  <input type="submit" value="Logga in">
+		  <br>
+		</form>
+   	</div>
   </body>
 </html>
