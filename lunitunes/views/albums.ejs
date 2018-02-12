@@ -1,0 +1,22 @@
+<!DOCTYPE HML>
+<html>
+    <head>
+        <% include partials/head %>
+    </head>
+    <body>
+        <header>
+            <% include partials/header %>
+        </header>
+
+        <main>
+            <h1>Hello Thar!</h1>
+            <div>
+                
+                <% Array.from(albums).forEach( (album) => { %>
+                    <h2><%= album %></h2> 
+                <% }); %>
+</div>
+        </main>
+    </body>
+
+</html>

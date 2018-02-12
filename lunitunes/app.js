@@ -9,6 +9,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var index_med_css = require('./routes/index_med_css');
 var index_med_css_och_databas = require('./routes/index_med_css_och_databas');
+var albums = require('./routes/albums')
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/index_med_css', index_med_css);
 app.use('/index_med_css_och_databas', index_med_css_och_databas);
+app.use('/albums', albums);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
