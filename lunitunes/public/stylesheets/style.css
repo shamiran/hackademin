@@ -1,5 +1,5 @@
-body {
-  padding: 50px;
+main {
+  padding: 50px 100px 0px 100px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -38,8 +38,9 @@ li a {
   -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
   transition: font-size 0.3s ease, background-color 0.3s ease;
 }
- 
-li a:hover {
-  font-size: 30px;
-  background: #f6f6f6;
+
+main h1 {
+  text-align: center;
+  padding-bottom: 50px;
 }
+ 

@@ -1,34 +1,35 @@
-<!DOCTYPE HML>
+<!DOCTYPE HTML>
 <html>
     <head>
         <% include partials/head %>
         <link rel='stylesheet' href='/stylesheets/style.css' />
     </head>
     <body>
-        <header>
-            <% include partials/header %>
-        </header>
-
+        <% include partials/header %>
         <main>
-            <h1>All the albums!</h1>
+            <h1><%= title %></h1>
             <div>
                 <table class="table">    
                     <tr>
                         <th>Title</th>
                         <th>Artist</th>
-                    <% Array.from(albums).forEach( (album) => { %>
+                        <th>Price</th>
+                    <% Array.from(tracks).forEach( (track) => { %>
                         
                         <tr>
                             <td>
-                                <a href="/albums/<%= album.albumId %>" ><%= album.title %></h6> 
+                                <h6><%= track.name %></h6>
                             </td>   
                             <td>
-                                <a href="/artists/<%= album.artistId %>" ><%= album.artistName %></h6>
+                                <h6><%= track.artistName %></h6>
+                            </td>
+                            <td>
+                                <h6><%= track.price %></h6>
+                            </td>
                         </tr>
                     <% }); %>
                 </table>
             </div>
         </main>
     </body>
-
 </html>
